@@ -11,3 +11,9 @@ parser.add_argument('-o', '--operacion',
 
 args = parser.parse_args()
 
+if args.operacion == 'sum':
+    print(args.numero_a + args.numero_b)
+elif args.operacion == 'res':
+    print(args.numero_a - args.numero_b)
+elif args.operacion == 'mul':
+    print(args.numero_a * args.numero_b)
