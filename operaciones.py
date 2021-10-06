@@ -1,4 +1,5 @@
 import argparse
+import funciones as fn
 
 parser = argparse.ArgumentParser(description='Calculadora, sum/res/mul/div a y b')
 parser.add_argument('-a', '--numero_a', type=int, help='Parámetro a')
@@ -17,3 +18,5 @@ elif args.operacion == 'res':
     print(args.numero_a - args.numero_b)
 elif args.operacion == 'mul':
     print(args.numero_a * args.numero_b)
+elif args.operacion == 'div':
+    print(fn.div(args.numero_a, args.numero_b))
